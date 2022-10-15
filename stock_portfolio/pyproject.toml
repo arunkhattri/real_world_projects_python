@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "stock-portfolio"
+version = "0.1.0"
+description = "Stock Portfolio Price Tracker"
+authors = ["Arun Kr. Khattri <arunkhattri@outlook.com>"]
+license = "GPLv3"
+readme = "README.md"
+packages = [{include = "stock_portfolio"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.0"
+numpy = "^1.23.4"
+scipy = "^1.9.2"
+yfinance = "^0.1.77"
+matplotlib = "^3.6.1"
+seaborn = "^0.12.0"
+mplfinance = "^0.12.9b1"
+Django = "^4.1.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+pyflakes = "^2.5.0"
+isort = "^5.10.1"
+pytest = "^7.1.3"
+ipython = "^8.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
